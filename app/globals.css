@@ -1,0 +1,36 @@
+/* globals.css */
+
+/* Style for the header navigation */
+.header-nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  margin-bottom: 1.25rem;
+  background-color: #1e40af;
+}
+
+/* Style for the link container */
+.header-links {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Style for the link text */
+.header-link {
+  color: #d1d5db;
+  margin-right: 1rem;
+  cursor: pointer;
+}
+
+.header-link:hover {
+  color: white;
+}
+
+/* Style for the logo text */
+.header-logo {
+  font-size: 1.125rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+}
