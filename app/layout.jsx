@@ -4,7 +4,7 @@ import Header from "./components/header";
 
 export const metadata = {
   title: "Goals app",
-  description: "set goals ",
+  description: "Set long term or short term goals ",
 };
 
 export default function RootLayout({ children }) {
