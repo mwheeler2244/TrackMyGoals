@@ -7,32 +7,26 @@ const Header = async () => {
 
   return (
     <nav className="header-nav">
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <Link href="/">
-          <div className="header-logo">Clerk App</div>
-        </Link>
+      <div className="header-logo">
+        <Link href="/">Goal App</Link>
       </div>
       <div className="header-links">
-        {!userId && (
+        {!userId ? (
           <>
-            <Link href="sign-in">
+            <Link href="sign-in" passHref>
               <div className="header-link">Sign In</div>
             </Link>
-            <Link href="sign-up">
+            <Link href="sign-up" passHref>
               <div className="header-link">Sign Up</div>
             </Link>
-            <Link href="form">
-              <div className="header-link">Form</div>
-            </Link>
           </>
-        )}
-        {userId && (
+        ) : (
           <>
-            <Link href="dashboard">
-              <div className="header-link">Dashboard</div>
+            <Link href="dashboard" passHref>
+              <div className="header-link">Goals</div>
             </Link>
-            <Link href="form">
-              <div className="header-link">Form</div>
+            <Link href="add-post" passHref>
+              <div className="header-link">Add Goal</div>
             </Link>
 
             <UserButton />

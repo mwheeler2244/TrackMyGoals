@@ -3,21 +3,25 @@ import { ClerkProvider } from "@clerk/nextjs";
 import Header from "./components/header";
 
 export const metadata = {
-  title: "Clerk App",
-  description: "Example Clerk App",
+  title: "Goals app",
+  description: "set goals ",
 };
 
 export default function RootLayout({ children }) {
+  const publishableKey = process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY;
+
+  if (!publishableKey) {
+    console.error(
+      "Missing NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY in environment variables."
+    );
+  }
+
   return (
-    <ClerkProvider>
+    <ClerkProvider publishableKey={publishableKey}>
       <html lang="en">
-        <head>
-          <title>{metadata.title}</title>
-          <meta name="description" content={metadata.description} />
-        </head>
         <body>
           <Header />
-          <main>{children}</main>
+          {children}
         </body>
       </html>
     </ClerkProvider>

@@ -1,0 +1,92 @@
+/* components.module.css */
+
+/* Main container for posts or goals */
+.post {
+  max-width: 400px;
+
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 15px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.post:hover {
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+.postTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.postAuthor {
+  font-size: 1rem;
+  color: #7f8c8d;
+  margin-bottom: 10px;
+}
+
+.postContent {
+  font-size: 1rem;
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+.features {
+  margin-top: 50px;
+}
+
+.feature-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.feature-item {
+  background-color: #ecf0f1;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  width: 30%;
+  transition: background-color 0.3s ease;
+}
+
+.feature-item:hover {
+  background-color: #e5e5e5;
+}
+
+/* Delete button with goals-oriented color theme */
+.deleteButton {
+  margin-top: 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.deleteButton:hover {
+  background-color: #c0392b;
+}
+
+/* Add custom button styles for goal actions */
+.completeButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #3498db;
+  margin-block: 20px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #2980b9;
+}
