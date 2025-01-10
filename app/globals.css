@@ -220,13 +220,6 @@ a {
 }
 
 /* Adding icons inside each feature item */
-.featureItem::before {
-  content: url("/icons/checklist.svg"); /* Example icon, replace with your own */
-  width: 30px;
-  height: 30px;
-  margin-bottom: 15px;
-  transition: transform 0.3s ease;
-}
 
 /* Icon Hover Effects */
 .featureItem:hover::before {
