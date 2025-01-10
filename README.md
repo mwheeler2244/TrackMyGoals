@@ -4,7 +4,8 @@
 - **Framework**: Next.js 15
 - **Library**: React 19
 - **Styling**: Clark
-- **Database**: Prisma
+- **Database**: Neon
+- **ORM**: Prisma
 - **Deployment**: Vercel
 
 ## Deployment
