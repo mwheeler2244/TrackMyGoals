@@ -61,12 +61,11 @@
 
 /* Delete button with goals-oriented color theme */
 .deleteButton {
-  margin-top: 20px;
   background-color: #e74c3c;
   color: white;
   border: none;
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 14px;
+  font-size: 0.75rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
@@ -77,10 +76,9 @@
 
 /* Add custom button styles for goal actions */
 .completeButton {
-  padding: 10px 20px;
-  font-size: 1rem;
+  padding: 10px 14px;
+  font-size: 0.75rem;
   background-color: #3498db;
-  margin-block: 20px;
   color: white;
   border: none;
   cursor: pointer;
